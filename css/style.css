@@ -1,0 +1,304 @@
+/* Variables */
+
+.root {
+    --basic-background: #888888;
+    --basic-black: #000000;
+    --basic-light-black: #333333;
+    --basic-white: #FFFFFF;
+    --basic-to-white: #FFFFFFE5;
+    --basic-blue: #81B3D2;
+    --basic-gray: #EEEEEE;
+    --basic-brown: #766357;
+    --basic-light-gray: #F2F2F2;
+    --basic-dark-gray: #ABABAB;
+    --basic-dark: #6A6A6A;
+    --basic-neutral: #CACACA;
+    --basic-extra-light: #A9A9A9;
+    --basic-ultra-gray: #666666;
+    
+    --special-blue: #669EC0;
+    --special-activ-blue: #5496BD;
+    --special-brown: #604E43;
+    --special-activ-brown: #503E33;
+    --special-gray: #EBEBEB;
+    --special-activ-gray: #BDBBBC;
+    --special-focus-gray: #E5E5E5;
+}
+
+/* Global */
+
+.page-body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+}
+
+.images{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+    line-height: 26px;
+    color: var(--basic-black);
+}
+
+.site-navigation {
+    list-style: none;
+    color: var(--basic-black);
+}
+
+.site-navigation a {
+    color: var(--basic-black);
+    text-decoration: none;
+    font-style: bold;
+    font-weight: 700;
+} 
+
+.site-navigation a:hover {
+    color: var(--basic-blue);  
+}
+
+.site-navigation a:focus {
+    opacity: 0.3;
+    color: var(--basic-black);
+}
+
+.site-navigation-current a:not([href]) {
+    color: var(--basic-brown);
+}
+
+/* Opinion */ 
+
+.opinion-title {
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-style: bold;
+    font-weight:700;
+}
+
+.opinion-promo {
+    text-align: center;
+    line-height: 26px;
+}
+
+/* Sity, Bridge */
+
+.sity,
+.bridge  {
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+}
+
+.sity h3,
+.bridge h3 {
+    font-size: 21px;
+    font-style: bold;
+    font-weight:700;
+}
+
+/* Recommendations */
+
+.recommendations-list {
+    list-style: none;
+}
+
+.recommendations-item {
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 21px;
+    font-style: bold;
+    font-weight:700;
+}
+
+/* Advantages */
+
+.advantages {
+    background-color: var(--basic-gray);
+}
+
+.advantages-list {
+    list-style: none;
+}
+
+.advantages-item {
+    text-align: center;
+}
+
+/* Search */
+
+.search-question {
+    text-align: center;
+    font-size: 30px;
+    line-height: 24px;
+    font-style: bold;
+    font-weight:700; 
+}
+
+.search-info {
+    text-align: center;
+    line-height: 24px;
+}
+
+/* Search-button */
+
+.search-button {
+    font-size: 21px;
+    line-height: 26px;
+    font-style: bold;
+    font-weight:700;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-brown);
+    border: none;
+}
+
+.search-button:hover {
+    background-color: var(--special-brown);
+}
+
+.search-button:focus {
+    opacity: 0.3;
+    background-color: var(--special-activ-brown);
+}
+
+/* Reservation */
+
+.reservation-in,
+.reservation-out,
+.reservation-item {
+    font-style: bold;
+    font-size: 14px;
+    line-height: 26px; 
+}
+
+.reservation-data,
+.reservation-people {
+    background-color: var(--basic-light-gray);
+    border: none;
+}
+
+.reservation-data:hover,
+.reservation-people:hover {
+    background-color: var(--special-gray);
+    border: none;
+}
+
+.reservation-data:focus,
+.reservation-people:focus {
+    background-color: var(--basic-white);
+    border: 2px solid var(--special-focus-gray) ;
+}
+
+/*
+.calendar,
+.minus-button,
+.plus-button {
+    color: var(--basic-extra-light);
+}
+
+.calendar:hover,
+.minus-button:hover,
+.plus-button:hover {
+    color: var(--basic-black);
+}
+
+.calendar:focus,
+.minus-button:focus,
+.plus-button:focus {
+    color: var(--basic-blue);
+}
+
+*/
+
+.reservation-button {
+    font-size: 21px;
+    line-height: 27px;
+    color: var(--basic-white);
+    text-decoration: none;
+    font-style: bold;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-blue);
+    border: none;
+}
+
+.reservation-button:hover {
+    background-color: var(--special-blue);
+}
+
+.reservation-button:focus {
+    opacity: 0.3;
+    background-color: var(-special-activ-blue);
+}
+
+/* Main-footer */
+
+.main-footer {
+    color: var(--basic-black);
+    opacity: 0.9;
+}
+
+.footer-contacts a,
+.footer-contacts a:hover,
+.footer-contacts a:focus,
+.footer-contacts a:active {
+    font-size: 21px;
+    line-height: 26px;
+    font-style: bold;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-decoration: none;
+}
+
+.footer-social {
+    text-align: center;
+}
+  
+.footer-social ul {
+    list-style: none;
+}
+
+/* Social button */
+  
+.social-button {
+    color: inherit;
+    text-decoration: none;
+}
+  
+.social-button:hover {
+    background-color: var(--special-blue);
+}
+  
+.social-button:focus {
+    opacity: 0.3;
+    background-color: var(-special-activ-blue);
+}
+
+.footer-copyright p {
+    line-height: 26px;
+}
+
+.academy-link:hover {
+    color: var(--basic-blue);
+}
+
+.academy-link:focus {
+    color: var(-special-activ-gray);
+}
