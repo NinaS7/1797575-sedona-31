@@ -1,7 +1,6 @@
 /* Variables */
 
 :root {
-    --basic-background: #888888;
     --basic-black: #000000;
     --basic-light-black: #333333;
     --basic-white: #FFFFFF;
@@ -37,25 +36,58 @@
     font-weight: 400;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: var(--basic-white);
-    display: block;
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    background-color: var(--basic-light-gray);
+      
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 .images{
     max-width: 100%;
     height: auto;
-    
+    display: block;
+}
+
+/* Grid */
+
+.page {
+    height: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-container {
+    background-color: var(--basic-white);
 }
 
 /* Main navigation */
 
 .main-navigation {
+    display: grid;
     line-height: 26px;
+    font-weight: 700;
     color: var(--basic-black);
+    background-color: var(--basic-white);
+    margin: 0 auto;
+    padding: 0 10px;
+}  
+
+
+/* Logo */
+
+.main-header-logo {
+    justify-self: center;
 }
 
 .site-navigation {
+    margin: 0 auto;
+    padding: 0 10px;
     list-style: none;
     color: var(--basic-black);
 }
@@ -63,7 +95,7 @@
 .site-navigation a {
     color: var(--basic-black);
     text-decoration: none;
-    font-weight: 700;
+    
 } 
 
 .site-navigation a:hover {
@@ -78,21 +110,34 @@
 /* Salutation */
 
 .salutation-images {
-    list-style: none;
-    text-align: center;
+    display: grid;
+    /*grid-template-rows:              min-content;*/
+    width: 1200px;
+    height:509px;
     background-color: var(--basic-gray);
     background-image: url("img/index/welcome/background-photo.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.salutation-images img {
+    justify-self: center; 
+}
 /* Opinion */ 
+
+.opinion {
+    margin: 0 auto;
+    padding: 0 10px;
+    display: grid;
+    grid-template-rows: min-content 1fr 1fr;
+}
 
 .opinion-title {
     text-align: center;
     font-size: 21px;
     line-height: 26px;
     font-weight:700;
+
 }
 
 .opinion-promo {
@@ -102,11 +147,24 @@
 
 /* Sity, Bridge */
 
-.city,
-.bridge  {
+.city {
+    display: grid;
+    grid-template-columns: 1fr auto;
     color: var(--basic-white);
     background-color: var(--basic-blue);
-    display: block;
+    margin: 0 auto;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.bridge  {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+    margin: 0;
+    padding-right: 10px;
+    text-align: center;
 }
 
 .city h3,
@@ -117,12 +175,25 @@
 
 /* Recommendations */
 
+.recommendations {
+    margin-bottom: 82px;
+}
+
 .recommendations-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 120px;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .recommendations-item {
     text-align: center;
+}
+
+.recommendations-item p {
+    margin: 0 10px;
 }
 
 .subtitle {
@@ -137,6 +208,11 @@
 }
 
 .advantages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 118px;    /* должны быть разные значения*/
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -145,6 +221,11 @@
 }
 
 /* Search */
+
+.search {
+    display: grid;
+    grid-template-rows: 1fr 1fr min-content;
+}
 
 .search-question {
     text-align: center;
@@ -170,6 +251,7 @@
     text-transform: uppercase;
     background-color: var(--basic-brown);
     border: none;
+    justify-self: center;
 }
 
 .search-button:hover {
@@ -441,8 +523,19 @@
 /* Main-footer */
 
 .main-footer {
+    
     color: var(--basic-black);
-    opacity: 0.9;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-contacts{
+    margin: 0;
+    width: 200px;
 }
 
 .footer-contacts a,
@@ -457,6 +550,8 @@
 }
 
 .footer-social {
+    width: 150px;
+    justify-self: center;
     text-align: center;
 }
   
@@ -478,6 +573,11 @@
 .social-button:active {
     color: rgba(255,255,255,0.3);
     background-color: var(-special-activ-blue);
+}
+
+.footer-copyright {
+    max-width: 150px;
+    margin: 0;
 }
 
 .footer-copyright span {
