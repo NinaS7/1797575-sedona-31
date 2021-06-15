@@ -339,11 +339,22 @@
 
 /* Filters */
 
+.catalog-container {
+    display: grid;
+    grid-template-rows: 217px 1fr;
+}
+
 .filter {
+    display: grid;
+    grid-template-columns:1fr 1fr 50%;
+    align-content: start;
+    height:217px;
     color: var(--basic-white);
-    background-color: var(--basic-gray);
+    background-color: var(--basic-ultra-gray);
     background-image: url("img/catalog/background.jpg");
     background-repeat: repeat;
+    margin-bottom: 29px;
+    padding: 0;
 }
 
 .filter legend {
@@ -368,7 +379,10 @@
 
 .filter-button {
     color: var(--basic-white);
+    background-color: rgba(255,255,255,0);
     border: 2px solid var(--basic-white);
+    grid-column: 3 / -1;
+    justify-self: center;
 }
 
 .filter-button:hover,
@@ -380,9 +394,19 @@
 
 /* Catalog */
 
-
 .site-navigation-current a:not([href]) {
     color: var(--basic-brown);
+}
+
+.catalog {
+    background-color: var(--basic-white);
+}
+
+.sorting {
+    grid-column: 1 / -1;
+    padding: 0;
+    margin: 0; 
+    margin-bottom: 62px;
 }
 
 .sorting h3 {
@@ -444,6 +468,8 @@
 /* Catalog-list */
 
 .catalog-list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     list-style: none;
 }
 
