@@ -83,9 +83,10 @@
     display: grid;
     line-height: 26px;
     font-weight: 700;
+    min-height: 70px;
     color: var(--basic-black);
     margin: 0 auto;
-    padding: 0 72px;
+    padding: 0 10px;
 }  
 
 /* Logo */
@@ -93,21 +94,24 @@
 .main-header-logo {
     width: 138px;
     height: 70px;
-    justify-self: center;
+    position: absolute;
+    margin-left: 521px;
+
 }
 
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 1200;
     margin: 0;
-    padding: 0;
+    padding: 0 62px;
     min-height: 56px;
     list-style: none;
     color: var(--basic-black);
 }
 
+.site-navigation li{
+    width: 228px;  
+}
 .site-navigation li:nth-child(2) {
     margin-right: 144px;
 }
@@ -127,7 +131,7 @@
     color: var(--basic-black);
     text-decoration: none;
     display: block;
-    width: 228px;
+    margin:15px 0;
 } 
 
 .site-navigation a:hover {
@@ -139,7 +143,7 @@
     color: var(--basic-black);
 }
 
-.site-navigation-current a:not([href]) {
+.site-navigation-current {
     color: var(--basic-brown);
 }
 
@@ -153,7 +157,7 @@
     width: 1200px;
     height:509px;
     background-color: var(--basic-gray);
-    background-image: url("img/index/welcome/background-photo.jpg");
+    background-image: url("../img/index/welcome/background-photo.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -409,6 +413,8 @@
 .plus-button {
     color: var(--basic-extra-light);
     border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .calendar:hover,
@@ -460,13 +466,12 @@
 .filter {
     display: grid;
     grid-template-columns:1fr 1fr 50%;
-    align-content: start;
-    height:217px;
+    min-height:217px;
     color: var(--basic-white);
     background-color: var(--basic-ultra-gray);
     background-image: url("img/catalog/background.jpg");
     background-repeat: repeat;
-    padding: 0;
+    padding: 0 72px;
 }
 
 .filter fieldset {
@@ -673,6 +678,8 @@
 } 
 
 .rating {
+    display: inline-block;
+    
     color: var(--basic-ultra-gray);
     background-color: var(--basic-light-gray);
     text-align: right;
@@ -693,7 +700,7 @@
 .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 120px;
+    min-height: 120px;
     margin: 0 auto;
     padding: 0 72px;
     background-color: rgba(255, 255, 255, 0.9);
