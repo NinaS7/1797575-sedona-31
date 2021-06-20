@@ -116,11 +116,13 @@
 
 .navigation-left {
     display: flex;
+    flex-wrap: wrap;
     text-align: left;
 }
 
 .navigation-right {
     display: flex;
+    flex-wrap: wrap;
     text-align: right;
 }
 
