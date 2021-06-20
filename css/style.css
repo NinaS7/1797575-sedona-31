@@ -102,7 +102,6 @@
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0;
     padding: 0 62px;
     list-style: none;
@@ -110,19 +109,19 @@
 }
 
 .site-navigation li{
-    width: 228px;
-    margin: auto 0;  
+    width: 228px;  
+}
+.site-navigation li:nth-child(2) {
+    margin-right: 144px;
 }
 
-.navigation-left {
-    display: flex;
-    flex-wrap: wrap;
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
     text-align: left;
 }
 
-.navigation-right {
-    display: flex;
-    flex-wrap: wrap;
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
     text-align: right;
 }
 
@@ -130,8 +129,8 @@
 .site-navigation a {
     color: var(--basic-black);
     text-decoration: none;
-    display:inline-block;
-    margin:15px 0;
+    display: block;
+    margin:15px auto;
 } 
 
 .site-navigation a:hover {
@@ -469,7 +468,7 @@
     min-height:217px;
     color: var(--basic-white);
     background-color: var(--basic-ultra-gray);
-    background-image: url("img/catalog/background.jpg");
+    background-image: url("../img/catalog/background.jpg");
     background-repeat: repeat;
     padding: 0 72px;
 }
@@ -694,7 +693,10 @@
 /* Main-footer */
 
 .main-footer {
-    color: var(--basic-black);   
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 1200px;
+    margin-top: -120px;
 }
 
 .footer-container {
@@ -703,7 +705,7 @@
     min-height: 120px;
     margin: 0 auto;
     padding: 0 72px;
-    background-color: rgba(255, 255, 255, 0.9);
+        
 } 
 
 .footer-contacts{
@@ -712,6 +714,7 @@
     align-items: center;
     justify-self: center;
     margin: 0;
+    margin-top: 23px;
     width: 200px;
 }
 
@@ -728,8 +731,9 @@
 }
 
 .footer-social {
+    display: flex;
+    flex-wrap: wrap;
     justify-self: center;
-    text-align: center;
 }
   
 .footer-social ul {
@@ -740,6 +744,7 @@
     list-style: none;
     margin: 0 auto;
     padding: 0;
+    align-content: center;
 }
 
 /* Social button */
@@ -788,15 +793,10 @@
     height: 33px;
 }
 
-.academy-link:hover {
-    color: var(--basic-blue);
+.academy-link:hover path {
+    fill: var(--basic-blue);
 }
 
-.academy-link:active {
-    color: var(--special-activ-gray);
-}
-
-.academy-link img {
-    width: 115px;
-    height: 33px;
+.academy-link:active path {
+    fill: var(--special-activ-gray);
 }
