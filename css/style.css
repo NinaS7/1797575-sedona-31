@@ -86,6 +86,7 @@
     color: var(--basic-black);
     margin: 0 auto;
     padding: 0 10px;
+    position: relative;
 }  
 
 /* Logo */
@@ -155,7 +156,6 @@
     background-image: url("../img/index/welcome/background-photo.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 .salutation img {
@@ -443,7 +443,7 @@
     background-color: var(--basic-white);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15); 
     position: absolute;
-    right: 324px;
+    right: 475px;
 }
 
 .reservation-form {
