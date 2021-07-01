@@ -82,7 +82,7 @@
 .main-navigation {
     line-height: 26px;
     font-weight: 700;
-    min-height: 56px;
+    min-height: 70px;
     color: var(--basic-black);
     margin: 0 auto;
     padding: 0 10px;
@@ -96,13 +96,16 @@
     height: 70px;
     margin: 0;
     position: absolute;
+    top: 0;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 1;
 }
 
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
+    height: 56px;
     margin: 0;
     padding: 0 62px;
     list-style: none;
@@ -152,21 +155,19 @@
 .salutation {
     width: 1200px;
     height:509px;
+    margin-top: -14px;
     background-color: var(--basic-gray);
     background-image: url("../img/index/welcome/background-photo.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .salutation img {
     display: block;
-    width: px;
-    height: px;
     margin: 0 auto;
     padding: 0;
     padding-top: 77px;
-    
-
 }
 
 .salutation::before {
@@ -401,20 +402,18 @@
 /* Search-button */
 
 .search-button {
-    display:block;
-    width: 568px;
-    height: 86px;
+    display: inline-block;
+    text-decoration: none;
     font-size: 21px;
     line-height: 26px;
     font-weight:700;
+    width: 568px;
     text-align: center;
     color: var(--basic-white);
     text-transform: uppercase;
     background-color: var(--basic-brown);
-    border: none;
-    justify-self: center;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 30px 0;
     position: relative;
 }
 
@@ -430,20 +429,20 @@
 /* Reservation */
 
 .reservation {
-    display: block;
     width: 568px;
     height: 395px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
-    position: absolute;
     margin: 0 auto;
     margin-bottom:-395px;
     color: var(--basic-black);
     background-color: var(--basic-white);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15); 
     position: absolute;
-    right: 475px;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .reservation-form {
@@ -549,7 +548,7 @@
 .minus-adults {
     position: absolute;
     top: 8px;
-    left: 130px;
+    left: 130px; 
 }
 
 .plus-adults {
@@ -577,6 +576,7 @@
     border: 0;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .calendar:hover path,
@@ -592,7 +592,6 @@
 }
 
 .reservation-button {
-    display: inline-block;
     width: 458px;
     font-size: 21px;
     line-height: 27px;
@@ -601,7 +600,6 @@
     font-weight: 700;
     text-transform: uppercase;
     background-color: var(--basic-blue);
-    border: none;
     margin: 0;
     padding: 16px 0;
     text-align: center;
@@ -613,7 +611,6 @@
 
 .reservation-button:active {
     color: rgba(255, 255, 255, 0.342);
-    
     background-color: var(--special-activ-blue);
 }
 
@@ -953,7 +950,7 @@
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    align-content: center;
+    align-items: center;
 }
 
 /* Social button */
@@ -972,13 +969,10 @@
 .social-button:hover {
     background-color: var(--special-blue);
 }
-  
-.social-button:active {
-    background-color: var(-special-activ-blue);
-}
 
 .social-button:active path {
     fill: rgba(255, 255, 255, 0.3);
+    background-color: var(-special-activ-blue);
 }
 
 .footer-copyright {
