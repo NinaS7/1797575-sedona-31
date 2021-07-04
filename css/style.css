@@ -717,6 +717,11 @@
     position: relative;
 }
 
+.cost-control-min,
+.cost-control-max {
+    display: flex;
+}
+
 .cost-control::before {
     content: "";
     position: absolute;
