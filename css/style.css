@@ -808,36 +808,37 @@
 /* Catalog */
 
 .catalog {
-    padding: 0 73px;
-    padding-top: 30px ;
-    padding-bottom: 31px;
-    border-bottom: 1px solid var(--special-focus-gray);
     margin-bottom: 120px;
 }
 
 .sorting {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0; 
+    align-items: center;
+    padding: 0 73px;
+    margin: 0;
+    min-height: 86px;
+    border-bottom: 1px solid var(--special-focus-gray);
 }
 
 .sorting h3 {
     font-size: 21px;
     line-height: 26px;
     padding: 0;
-    margin: 0; 
+    margin: 0;
+    margin-right: 46px; 
 }
 
 .sorting h4 {
     font-size: 12px;
     line-height: 18px;
     padding: 0;
-    margin: 0; 
+    margin: 0;
+    margin-right: 40px; 
 }
 
 .sorting-list {
+    display: flex;
     list-style: none;
     font-size: 12px;
     line-height: 18px;
@@ -845,20 +846,22 @@
     margin: 0;
 }
 
-.sorting a {
+.sorting-list a {
+    display: block;
     color: var(--basic-black);
     opacity: 0.3;
     text-decoration: underline dashed;
+    margin-right: 33px;
 }
 
-.sorting a:hover {
+.sorting-list a:hover {
     color: var(--basic-blue);
     text-decoration: none;
     opacity: 1;
     text-decoration: underline dashed;
 }
 
-.sorting a:active {
+.sorting-list a:active {
     color: var(--basic-black);
     text-decoration: none;
 }
@@ -867,14 +870,25 @@
 .sorting-current a:hover,
 .sorting-current a:focus,
 .sorting-current a:active {
-    color: var(--basic-blue);
+    color: rgba(129, 179, 210, 1);;
     text-decoration: none;
     opacity: 1;
+}
+
+.pages {
+    margin-left: auto;
 }
 
 .pages a {
     color: var(--basic-neutral);
     text-decoration: none;
+    margin-right: 12px;
+    width: 11px;
+    height: 10px;
+}
+
+.pages a:last-child {
+    margin-right: 0;
 }
 
 .pages a:hover path {
@@ -895,19 +909,31 @@
     margin: 0;
 }
 
+.catalog-item {
+    display: flex;
+    padding: 0 73px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--special-focus-gray);
+}
+
 .catalog-item-image {
+    display: block;
     width: 135px;
     height: 90px;
-    margin: 0; 
+    padding: 0;
+    margin: 30px 29px 0 0;
 }
 
 .title-item {
+    display: block;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: var(--basic-black);
     text-decoration: none;
     text-transform: uppercase;
+    margin-bottom: 7px;
+    margin-top: 23.5px;    
 }
 
 .title-item:hover {
@@ -919,18 +945,41 @@
     opacity: 0.3;
 }
 
-.detailed-button {
-    display: inline-block; 
+.catalog-item p {
+    color: var(--basic-light-black);
+    margin: 0;
+} 
+
+.catalog-item-detail {
+    display: flex;
+    justify-content: space-between;
+    width: 212px;
+    margin-bottom: 15.5px;
+}
+
+.price {
+    min-width: 96px;
+}
+
+.catalog-button {
+    display: flex;
+    width: 890px;
+}
+
+.catalog-detailed-button {
+    display: block; 
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-white);
     text-decoration: none;
     font-weight: 700;
     text-align: center;
-    vertical-align: middle;
     text-transform: uppercase;
     background-color: var(--basic-blue);
     border: none;
+    width: 110px;
+    padding: 3px 0;
+    margin-right: 6px;
 }
 
 .detailed-button:hover {
@@ -942,18 +991,19 @@
     background-color: var(-special-activ-blue);
 }
 
-.order-button {
-    display: inline-block;
+.catalog-order-button {
+    display: block;
     font-size: 14px;
     line-height: 21px;
     font-weight:700;
     text-align: center;
     color: var(--basic-white);
     text-decoration: none;
-    vertical-align: middle;
     text-transform: uppercase;
     background-color: var(--basic-brown);
     border: none;
+    width: 142px;
+    padding: 3px 0;
 }
 
 .order-button:hover {
@@ -965,18 +1015,14 @@
     background-color: var(--special-activ-brown);
 }
 
-.catalog-item p {
-    color: var(--basic-light-black);
-    padding: 0;
-    margin: 0;
-} 
-
 .rating {
     display: inline-block;
-    
+    margin-left: 522px;
+    padding: 3px 0;
+    padding-left: 15px;
+    padding-right: 12px;
     color: var(--basic-ultra-gray);
     background-color: var(--basic-light-gray);
-    text-align: right;
 }
 
 /* Main-footer */

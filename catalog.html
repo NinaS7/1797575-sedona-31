@@ -83,8 +83,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <div class="toggle toggle-min" aria-label="Минимальная стоимость"></div>
+                  <div class="toggle toggle-max" aria-label="Максимальная стоимость"></div>
                 </div>
               </div>
               <button class="filter-button" type="submit">Показать</button>
@@ -102,10 +102,10 @@
                 <li><a href="#">По рейтингу</a></li>
               </ul>
             <div class="pages">  
-            <a href="#">
+            <a href="#" aria-label="перейти по списку вверх">
               <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
             </a>
-            <a href="#">
+            <a href="#" aria-label="перейти по списку вниз">
               <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0h11" fill="#81B3D2"/></svg>
             </a>
             </div>
@@ -113,40 +113,51 @@
           <h5 class="visually-hidden">Подробное описание</h5>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <p class="catalog-item-image">
-                <img class="images" src="img/catalog/hotel.jpg" width="135" height="90" alt="" >
-              </p>
-              <a class="title-item" href="#">Amara Resort & Spa</a>
-              <!--Здесь будут звёзды -->
-              <p>Гостиница</p>
-              <p>От 4000 <span>&#8381;</span></p>
-              <a class="detailed-button" href="#">Подробнее</a>
-              <a class="order-button" href="#">Забронировать</a>
-              <p class="rating">Рейтинг: 8,5</p>
+              <img class="catalog-item-image" src="img/catalog/hotel.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa" >
+              <div>
+                <a class="title-item" href="#">Amara Resort & Spa</a>
+                <!--Здесь будут звёзды -->
+                <div class="catalog-item-detail">
+                  <p>Гостиница</p>
+                  <p class="price">От 4000 <span>&#8381;</span></p>
+                </div>
+                <div class="catalog-button">
+                  <a class="catalog-detailed-button" href="#">Подробнее</a>
+                  <a class="catalog-order-button" href="#">Забронировать</a>
+                  <span class="rating">Рейтинг: 8,5</span>
+                </div>
+              </div>
             </li>
             <li class="catalog-item">
-              <p class="catalog-item-image">
-                <img class="images" src="img/catalog/motel.jpg" width="135" height="90" alt="" >
-              </p>
-              <a class="title-item" href="#">Desert Quail Inn</a>
-              <!--Здесь будут звёзды -->
-              <p>Мотель</p>
-              <p>От 3000 <span>&#8381;</span></p>
-              <a class="detailed-button"  href="#">Подробнее</a>
-              <a class="order-button" href="#">Забронировать</a>
-              <p class="rating">Рейтинг: 8,9</p>
+              <img class="catalog-item-image" src="img/catalog/motel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn" >
+              <div>
+                <a class="title-item" href="#">Desert Quail Inn</a>
+                <!--Здесь будут звёзды -->
+                <div class="catalog-item-detail">
+                  <p>Мотель</p>
+                  <p class="price">От 3000 <span>&#8381;</span></p>
+                </div>
+                <div class="catalog-button">
+                  <a class="catalog-detailed-button"  href="#">Подробнее</a>
+                  <a class="catalog-order-button" href="#">Забронировать</a>
+                  <span class="rating">Рейтинг: 8,9</span>
+              </div>
             </li>
             <li class="catalog-item">
-              <p class="catalog-item-image">
-                <img class="images" src="img/catalog/apartments.jpg" width="135" height="90" alt="">
-              </p>
-              <a class="title-item" href="#">Villas at Poco Diablo</a>
-              <!--Здесь будут звёзды -->
-              <p>Апартаменты</p>
-              <p>От 2000 <span>&#8381;</span></p>
-              <a class="detailed-button" href="#">Подробнее</a>
-              <a class="order-button" href="#">Забронировать</a>
-              <p class="rating">Рейтинг: 9,2</p>
+              <img class="catalog-item-image" src="img/catalog/apartments.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+              <div>
+                <a class="title-item" href="#">Villas at Poco Diablo</a>
+                <!--Здесь будут звёзды -->
+                <div class="catalog-item-detail"> 
+                  <p>Апартаменты</p>
+                  <p class="price">От 2000 <span>&#8381;</span></p>
+                </div>
+                <div class="catalog-button">
+                  <a class="catalog-detailed-button" href="#">Подробнее</a>
+                  <a class="catalog-order-button" href="#">Забронировать</a>
+                  <span class="rating">Рейтинг: 9,2</span>
+                </div>
+              </div>
             </li>
           </ul>
         </section>
@@ -166,19 +177,19 @@
               <li>
                 <a class="social-button" href="#">
                   <span class="visually-hidden">Twitter</span>
-                  <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 01-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479z" fill="#fff"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 01-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479z" fill="#fff"/></svg>
                 </a>
               </li>
               <li>
                 <a class="social-button" href="#">
                   <span class="visually-hidden">Facebook</span>
-                  <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
                 </a>
               </li>
               <li>
                 <a class="social-button" href="#">
                   <span class="visually-hidden">YouTube</span>
-                  <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm3.027 4.002v7.996L15.014 8 6.027 4.002z" fill="#fff"/></svg>
+                  <svg aria-hidden="true" focusable="false" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm3.027 4.002v7.996L15.014 8 6.027 4.002z" fill="#fff"/></svg>
                 </a>
               </li>
             </ul>
