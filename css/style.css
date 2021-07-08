@@ -105,7 +105,6 @@
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    height: 56px;
     margin: 0;
     padding: 0 62px;
     list-style: none;
