@@ -146,7 +146,7 @@
     color: var(--basic-black);
 }
 
-.current {
+.site-navigation .site-navigation-current {
     color: var(--basic-brown);
 }
 
@@ -533,7 +533,8 @@
 .reservation-data:focus,
 .reservation-people:focus {
     background-color: var(--basic-white);
-    border: 2px solid var(--special-focus-gray);
+    border: none;
+    outline: 2px solid var(--special-focus-gray);
 }
 
 .calendar {
@@ -542,7 +543,6 @@
     right: 8px;
     width: 21px;
     height: 23px;
-    background-color: transparent;
 }
 
 .minus-adults {
@@ -577,6 +577,7 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .calendar:hover path,
@@ -625,7 +626,6 @@
 
 .catalog-container {
     display: grid;
-    grid-template-rows: 217px 1fr;
 }
 
 .filters {
@@ -638,10 +638,10 @@
 
 .filter {
     display: grid;
-    grid-template-columns: 254px 483px 1fr;
+    grid-template-columns: 254px 483px 317px;
     color: var(--basic-white);
     margin: 0 72px;
-    padding-top: 26.5px ;
+    padding-top: 27px ;
 }
 
 .filter fieldset {
@@ -703,7 +703,7 @@
 }
 
 .filter-item legend {
-    margin-bottom: 10.5px;
+    margin-bottom: 11px;
 }
 
 .cost-control {
@@ -713,13 +713,14 @@
     padding: 0;
     border: 2px solid var(--basic-white);
     border-radius: 2px;
-    text-transform: uppercase;
     position: relative;
 }
 
 .cost-control-min,
 .cost-control-max {
     display: flex;
+    align-items: center;
+    width: 50%;
 }
 
 .cost-control::before {
@@ -736,12 +737,13 @@
 .cost-control input {
     height: 36px;
     margin: 0;
-    padding: 0;
+    padding: 0 5px;
     color: var(--basic-white);
     background-color: transparent;
     list-style: none;
     border: none;
     text-align: center;
+    text-transform: uppercase;
 }   
 
 .range-controls {
@@ -782,8 +784,8 @@
 
 
 .range-controls .toggle:hover {
-    width: 4.6px;
-    height: 4.4px;
+    width: 5px;
+    height: 4px;
     border: 9px solid var(--basic-white);
 }
 
@@ -875,7 +877,7 @@
 .sorting-current a:hover,
 .sorting-current a:focus,
 .sorting-current a:active {
-    color: rgba(129, 179, 210, 1);;
+    color: var(--basic-blue);
     text-decoration: none;
     opacity: 1;
 }
@@ -938,7 +940,26 @@
     text-decoration: none;
     text-transform: uppercase;
     margin-bottom: 7px;
-    margin-top: 23.5px;    
+    margin-top: 24px; 
+}
+
+.stars-four {
+    background-image: url("../img/catalog/stars.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.stars-three {
+    background-image: url("../img/catalog/stars.svg");
+    background-repeat: no-repeat;
+    background-position: 823px 0;
+
+}
+
+.stars-two {
+    background-image: url("../img/catalog/stars.svg");
+    background-repeat: no-repeat;
+    background-position: 848px 0;
 }
 
 .title-item:hover {
@@ -959,7 +980,7 @@
     display: flex;
     justify-content: space-between;
     width: 212px;
-    margin-bottom: 15.5px;
+    margin-bottom: 16px;
 }
 
 .price {
@@ -1052,11 +1073,11 @@
 .footer-contacts{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-self: center;
     margin: 0;
     margin-top: 23px;
-    width: 200px;
+    margin-left: 63px;
+    align-items: center;
+    justify-self: center;   
 }
 
 .footer-contacts a,
@@ -1113,8 +1134,8 @@
 .footer-copyright {
     display: flex;
     justify-content: space-between; 
-    width: 204px;
     margin: 0;
+    margin-right: 58px;
     justify-self: center;
     align-items: center;
 }
@@ -1123,6 +1144,7 @@
     width: 74px;
     height: 26px;
     line-height: 26px;
+    margin-right: 15px;
 }
 
 .academy-link {
