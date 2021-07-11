@@ -321,7 +321,7 @@
 .souvenirs::before {
     content: "";
     position: absolute;
-    top: -110px;
+    top: -105px;
     left: 50%;
     width: 64px;
     height: 77px;
@@ -375,7 +375,6 @@
 .search {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
-    min-height: 233px;
     text-align: center;
 }
 
@@ -385,16 +384,17 @@
     font-weight:700;
     margin: 0;
     margin-bottom: 4px;
+    padding-right: 10px;
     
 }
 
 .search-info {
-    display: flex;
+    display: block;
     width: 450px;
-    height: 95px;
-    align-items: center;
     line-height: 24px;
     margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 43px;
 }
 
 /* Search-button */
@@ -472,7 +472,6 @@
 .reservation-out label,
 .reservation-kids label,
 .reservation-adults label {
-    height: 26px;
     align-self: center;
 }
 
@@ -502,7 +501,7 @@
     border: none;
     box-sizing: border-box;
     margin: 0;
-    padding-left: 15px;
+    padding-left: 14px;
 }
 
 .reservation-people {
@@ -542,14 +541,14 @@
 
 .minus-adults {
     position: absolute;
-    top: 8px;
-    left: 130px; 
+    top: 10px;
+    left: 125px; 
 }
 
 .plus-adults {
     position: absolute;
     top: 12px;
-    left: 200px;
+    left: 202px;
 }
 
 .minus-kids {
@@ -717,7 +716,6 @@
 
 .cost-control-min,
 .cost-control-max {
-    display: flex;
     align-items: center;
     width: 50%;
 }
@@ -734,9 +732,8 @@
 }
 
 .cost-control input {
-    height: 36px;
     margin: 0;
-    padding: 0 5px;
+    padding: 7px 0;
     color: var(--basic-white);
     background-color: transparent;
     list-style: none;
@@ -747,9 +744,9 @@
 
 .range-controls {
     position: relative;
-    height: 33px;
     background-color: transparent;
     padding-top: 20px;
+    margin-bottom: 34px;
   }
 
 .range-controls .scale {
@@ -758,7 +755,7 @@
 }
 
 .range-controls .bar {
-    width: 250px;
+    width: 255px;
     height: 2px;
     background: var(--basic-white);
 }
@@ -778,7 +775,7 @@
 }
 
 .range-controls .toggle-max {
-    left: 250px;
+    left: 254px;
 }
 
 
@@ -791,11 +788,10 @@
 
 .filter-button {
     display: block;
-    width: 137px;
+    min-width: 137px;
     height: 36px;
     padding: 0;
-    margin-bottom: 32px;
-    margin: 0 auto; 
+    margin: 0 87px; 
     color: var(--basic-white);
     background-color: transparent;
     border: 2px solid var(--basic-white);
@@ -945,20 +941,20 @@
 .stars-four {
     background-image: url("../img/catalog/stars.svg");
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 100% 5px;
 }
 
 .stars-three {
     background-image: url("../img/catalog/stars.svg");
     background-repeat: no-repeat;
-    background-position: 823px 0;
+    background-position: 823px 5px;
 
 }
 
 .stars-two {
     background-image: url("../img/catalog/stars.svg");
     background-repeat: no-repeat;
-    background-position: 848px 0;
+    background-position: 848px 5px;
 }
 
 .title-item:hover {
