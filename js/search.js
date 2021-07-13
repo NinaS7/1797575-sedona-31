@@ -1,8 +1,8 @@
 const searchButton = document.querySelector(".search-button");
 let  popup= document.querySelector(".reservation");
-const form = loginPopup.querySelector(".reservation-form");
-const data = loginPopup.querySelector(".reservation-data");
-const people = loginPopup.querySelector(".reservation-people");
+const form = document.querySelector(".reservation-form");
+const data = form.querySelector(".reservation-data");
+const people = form.querySelector(".reservation-people");
 
 popup.classList.add("popup-close");
 

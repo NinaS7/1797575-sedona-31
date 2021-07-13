@@ -616,8 +616,8 @@
 }
 
 @keyframes modal-show {
-    from {transform: translateY(-100%);}
-    to {transform: translateY(0);}
+    from {transform: translate(-50% -100%);}
+    to {transform: translateY(-50% 0);}
 }
   
 .popup-show {
