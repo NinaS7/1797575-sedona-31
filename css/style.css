@@ -401,7 +401,7 @@
 
 .search-button {
     display: inline-block;
-    border: none;
+    text-decoration: none;
     font-size: 21px;
     line-height: 26px;
     font-weight:700;
