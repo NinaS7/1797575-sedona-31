@@ -401,6 +401,7 @@
 
 .search-button {
     display: inline-block;
+    vertical-align: middle;
     text-decoration: none;
     font-size: 21px;
     line-height: 26px;
@@ -1067,6 +1068,7 @@
 
 .rating {
     display: inline-block;
+    vertical-align: middle;
     margin-left: 522px;
     padding: 3px 0;
     padding-left: 15px;
@@ -1172,6 +1174,7 @@
 
 .academy-link {
     display: inline-block;
+    vertical-align: middle;
     color: inherit;
     width: 115px;
     height: 33px;    
