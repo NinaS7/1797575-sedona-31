@@ -8,11 +8,8 @@ popup.classList.add("popup-close");
 
 searchButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("popup-show");
-  searchButton.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("popup-show");
-  });
+  popup.classList.toggle("popup-close");
+  popup.classList.toggle("popup-show");
 });
 
 

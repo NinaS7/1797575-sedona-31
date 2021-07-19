@@ -656,10 +656,12 @@
 .map {
     width: 1200px;
     height: 594px;
+    background-color: var(--basic-extra-light);
+    background-image: url("../img/index/map.png");
 }
-
 .map iframe {
     border: none;
+
 }
 
 /* Filters */
@@ -748,6 +750,29 @@
     cursor: default;
     color: var(--basic-dark);
 }
+
+.filter-input-checkbox:disabled + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/catalog/checkbox-off-disabled.svg");
+    background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/catalog/checkbox-on-disabled.svg");
+    background-repeat: no-repeat;
+}
+
 
 .filter-item legend {
     margin-bottom: 11px;
@@ -1126,10 +1151,8 @@
 .footer-contacts{
     display: flex;
     flex-direction: column;
-    margin: 0;
-    margin-top: 23px;
+    margin: auto 0;
     align-items: center;
-    justify-self: center;   
 }
 
 .footer-contacts a,
@@ -1153,8 +1176,7 @@
 .footer-social ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 150px;
+    min-width: 156px;
     list-style: none;
     margin: 0 auto;
     padding: 0;
@@ -1172,6 +1194,7 @@
     color: var(--basik-white);
     background-color: var(--basic-blue);
     text-decoration: none;
+    margin: 3px;
 }
   
 .social-button:hover {
