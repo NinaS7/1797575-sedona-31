@@ -491,8 +491,7 @@
     width: 179px;
 }
 
-
-input[type="text"]::placeholder {
+.reservation input::placeholder {
     color: var(--basic-black);
 }    
 
@@ -790,6 +789,10 @@ input[type="text"]::placeholder {
     border: none;
     text-align: center;
     text-transform: uppercase;
+}   
+
+.cost-control input::placeholder {
+    color: var(--basic-white);
 }   
 
 .range-controls {
